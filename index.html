@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Place Mat</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/sri0pcc.css">
+  <link rel="stylesheet" href="https://use.typekit.net/sri0pcc.css">
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+  </script>
+</head>
+
+<body>
+  <div class="body">
+  <div class="body-box">
+
+    <div class="content">
+
+      <div>2022-11-27</div>
+
+      <img src="img/Image-1.jpeg" style="width:">
+      <img src="img/Image-2.jpeg" style="width:">
+      <img src="img/Image-3.jpeg" style="width:">
+
+    </div>
+
+    <div class="flow-1 flow">
+      <img src="img/flow-1.png" style="width:100%;">
+    </div>
+
+    <div class="flow-2 flow">
+      <img src="img/flow-2.png" style="width:100%;">
+    </div>
+
+    <div class="flow-3 flow">
+      <img src="img/flow-3.png" style="width:100%;">
+    </div>
+
+    <div class="flow-4 flow">
+      <img src="img/flow-4.png" style="width:100%;">
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/pm-small-12.png" alt="Avatar" style="width:100%;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/pm-small-13.png" alt="Avatar" style="width:100%;">
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>
+
+</body>
+
+<script>
+
+var interval = null;
+
+function initInterval(){
+    if(interval)
+        clear();
+
+    showElement();
+	interval = setTimeout(function(){
+    	$(".flow").fadeOut();
+        clear();
+    },3000);
+}
+
+function clear(){
+	window.clearInterval(interval);
+    interval = null;
+}
+
+function showElement(){
+	$(".flow").fadeIn();
+}
+
+function registerEvents(){
+    console.log("Events registering");
+	$(document).on("mousemove", function(){
+    	initInterval();
+    });
+}
+
+(function(){
+	registerEvents();
+})()
+</script>
