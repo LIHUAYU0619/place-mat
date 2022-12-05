@@ -3,11 +3,29 @@ html {
   height: 100vh;
   margin: 0;
   background-color: #8fe872;
+  overflow:hidden;
   /* width:100vw;
   height:100vh; */
 }
 
 * {box-sizing: border-box}
+
+@font-face {
+  font-family: 'TheanoModern-Regular';
+  font-weight: bold;
+  src: url('TheanoModern-Regular.ttf');}
+
+  @font-face {
+    font-family: 'AdmiralCAT';
+    /* font-weight: bold; */
+    src: url('AdmiralCAT.ttf');}
+
+a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 
 .content img{
   margin-bottom:20px;
@@ -26,6 +44,8 @@ html {
   justify-content: center;
   margin: 0;
   padding:0;
+  overflow:hidden;
+  font-family: 'TheanoModern-Regular', serif;
 }
 
 .body-box{
@@ -38,8 +58,20 @@ html {
   margin: 0;
   overflow: scroll;
   padding:20px;
-  font-size: 3em;
+  font-size: 2em;
   margin:0;
+  overflow-x: hidden;
+}
+
+.template{
+  font-family: 'AdmiralCAT', sans-serif;
+  position: fixed;
+  right:3%;
+  top:5%;
+  font-size: 1em;
+  color:#ff85d2;
+  /* width:400px; */
+
 }
 
 
@@ -73,6 +105,14 @@ html {
   width:11%;
   right:9%;
   top:17%;
+
+}
+
+.flow-5{
+  position: fixed;
+  width:90%;
+  right:5%;
+  top:3%;
 
 }
 
