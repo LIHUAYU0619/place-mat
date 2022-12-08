@@ -20,6 +20,11 @@
 
 <body>
   <div class="body">
+
+    <div class="mobile">
+      please visit this site on desktop. :-)
+    </div>
+
   <div class="body-box">
 
     <div class="content">
@@ -75,6 +80,8 @@
 
 
     </div>
+
+
 
     <!-- <div class="flow-1 flow">
       <img src="img/flow-1.png" style="width:100%;">
@@ -155,17 +162,17 @@ function registerEvents(){
 </script> -->
 
 <script>
-var timedelay = 10;
+var timedelay = 20;
 function delayCheck() {
-    if (timedelay == 10) {
+    if (timedelay == 20) {
         $('.flow').fadeIn();
-        timedelay = 10;
+        timedelay = 20;
     }
-    timedelay = timedelay+10;
+    timedelay = timedelay+20;
 }
 $(document).mousemove(function() {
     $('.flow').fadeOut();
-    timedelay = 10;
+    timedelay = 20;
     clearInterval(_delay);
     _delay = setInterval(delayCheck, 2000);
 });

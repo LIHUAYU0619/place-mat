@@ -2,57 +2,62 @@ html {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  padding: 0;
   background-color: #8fe872;
-  overflow:hidden;
+  overflow: hidden;
   /* width:100vw;
   height:100vh; */
 }
 
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box
+}
 
 @font-face {
   font-family: 'TheanoModern-Regular';
   font-weight: bold;
-  src: url('TheanoModern-Regular.ttf');}
-
-  @font-face {
-    font-family: 'AdmiralCAT';
-    /* font-weight: bold; */
-    src: url('AdmiralCAT.ttf');}
-a{
-  text-decoration: none;
-  color:black;
+  src: url('TheanoModern-Regular.ttf');
 }
-a:hover{
+
+@font-face {
+  font-family: 'AdmiralCAT';
+  /* font-weight: bold; */
+  src: url('AdmiralCAT.ttf');
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-
-
-
-.content img{
-  margin-bottom:20px;
+.content img {
+  margin-bottom: 20px;
   border-radius: 25px;
   /* border: 3.5px solid black; */
-  width:60%;
+  width: 60%;
   min-width: 420px;
 }
 
 .body {
-  width: 100%;
+  width: 99.8%;
   height: 100%;
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding:0;
-  overflow:hidden;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
   font-family: 'TheanoModern-Regular', serif;
 }
 
-.body-box{
+.body-box {
   width: 97%;
   height: 96%;
   background-color: white;
@@ -61,75 +66,66 @@ a:hover{
   position: absolute;
   margin: 0;
   overflow: scroll;
-  padding:20px;
+  padding: 20px;
   font-size: 1.5em;
-  margin:0;
+  margin: 0;
   overflow-x: hidden;
 }
 
-.template{
+.template {
   font-family: 'AdmiralCAT', sans-serif;
   position: fixed;
-  right:3%;
-  top:5%;
+  right: 3%;
+  top: 5%;
   font-size: 1.5em;
-  color:#ff85d2;
+  color: #ff85d2;
   /* width:400px; */
-
 }
 
-
-
-.flow-1{
+.flow-1 {
   position: fixed;
-  width:30%;
-  left:40%;
-  top:40%;
-
+  width: 30%;
+  left: 40%;
+  top: 40%;
 }
 
-.flow-2{
+.flow-2 {
   position: fixed;
-  width:16%;
-  left:2%;
-  top:1.5%;
-
+  width: 16%;
+  left: 2%;
+  top: 1.5%;
 }
 
-.flow-3{
+.flow-3 {
   position: fixed;
-  width:10%;
-  left:20%;
-  bottom:1.5%;
-
+  width: 10%;
+  left: 20%;
+  bottom: 1.5%;
 }
 
-.flow-4{
+.flow-4 {
   position: fixed;
-  width:11%;
-  right:9%;
-  top:17%;
-
+  width: 11%;
+  right: 9%;
+  top: 17%;
 }
 
-.flow-5{
+.flow-5 {
   position: fixed;
-  width:90%;
-  right:5%;
-  top:3%;
+  width: 90%;
+  right: 5%;
+  top: 3%;
   z-index: 999;
-
 }
 
 /* flip card */
-
 .flip-card {
   background-color: transparent;
   width: 400px;
   /* height: 300px; */
   /* perspective: 1000px; */
-  right:2%;
-  bottom:30%;
+  right: 2%;
+  bottom: 30%;
   position: fixed;
 }
 
@@ -161,4 +157,19 @@ a:hover{
 .flip-card-back {
   color: white;
   transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+  display: block;
+  color:white;
+  background: rgb(0, 0, 0);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999999999999999;
+  /* display: none; */
+}
 }
