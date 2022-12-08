@@ -112,10 +112,10 @@ a:hover {
 
 .flow-5 {
   position: fixed;
-  width: 90%;
+  width: 87%;
   right: 5%;
   top: 3%;
-  z-index: 999;
+  z-index: 998;
 }
 
 /* flip card */
@@ -127,6 +127,7 @@ a:hover {
   right: 2%;
   bottom: 30%;
   position: fixed;
+  z-index: 999;
 }
 
 .flip-card-inner {
